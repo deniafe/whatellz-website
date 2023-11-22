@@ -41,7 +41,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ header, text }) => {
         </div>
 
         <div className="w-full">
-          <h4 className="mt-1 text-lg font-semibold text-dark ">
+          <h4 className="mt-1 text-lg font-semibold text-gray-800 ">
             {header}
           </h4>
         </div>
@@ -52,7 +52,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ header, text }) => {
           active ? "block" : "hidden"
         }`}
       >
-        <p className="py-3 text-base leading-relaxed text-body-color">
+        <p className="py-3 text-base leading-relaxed text-gray-700">
           {text}
         </p>
       </div>
@@ -70,10 +70,10 @@ export const FAQ: React.FC<AccordionProps> = () => {
             <span className="mb-2 block text-lg font-semibold text-primary">
               FAQ
             </span>
-            <h2 className="mb-4 text-3xl font-bold text-dark  sm:text-[40px]/[48px]">
+            <h2 className="mb-4 text-3xl font-bold text-gray-800  sm:text-[40px]/[48px]">
               Any Questions? Look Here
             </h2>
-            <p className="text-base text-body-color">
+            <p className="text-base text-gray-700">
             This section is designed to provide quick and concise solutions, 
             saving you time and keeping you informed
             </p>

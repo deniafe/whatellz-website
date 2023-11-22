@@ -11,10 +11,10 @@ export const Contact = () => {
                 <span className="mb-4 block text-base font-semibold text-primary">
                   Contact Us
                 </span>
-                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark  sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                <h2 className="mb-6 text-[32px] font-bold uppercase text-gray-800  sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
-                <p className="mb-9 text-base leading-relaxed text-body-color">
+                <p className="mb-9 text-base leading-relaxed text-gray-700">
                   {`Get in touch with us! Our team is ready to assist you on your journey to success. 
                   Reach out and let's start a conversation today! `}
                 </p>
@@ -34,10 +34,10 @@ export const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark ">
+                    <h4 className="mb-1 text-xl font-bold text-gray-800 ">
                       Our Location
                     </h4>
-                    <p className="text-base text-body-color">
+                    <p className="text-base text-gray-700">
                       99 S.t Jomblo Park Pekanbaru 28292. Indonesia
                     </p>
                   </div>
@@ -74,10 +74,10 @@ export const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark ">
+                    <h4 className="mb-1 text-xl font-bold text-gray-800 ">
                       Phone Number (WhatsApp)
                     </h4>
-                    <p className="text-base text-body-color">
+                    <p className="text-base text-gray-700">
                       08072030152
                     </p>
                   </div>
@@ -99,10 +99,10 @@ export const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark ">
+                    <h4 className="mb-1 text-xl font-bold text-gray-800 ">
                       Email Address
                     </h4>
-                    <p className="text-base text-body-color">
+                    <p className="text-base text-gray-700">
                       info@whatellz.com
                     </p>
                   </div>
@@ -980,7 +980,7 @@ const ContactTextArea: React.FC<ContactTextAreaProps> = ({
           rows={row}
           placeholder={placeholder}
           name={name}
-          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary"
+          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-gray-700 outline-none focus:border-primary"
           defaultValue={defaultValue}
         />
       </div>
@@ -1002,7 +1002,7 @@ const ContactInputBox: React.FC<ContactInputBoxProps> = ({ type, placeholder, na
           type={type}
           placeholder={placeholder}
           name={name}
-          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary"
+          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-gray-700 outline-none focus:border-primary"
         />
       </div>
     </>

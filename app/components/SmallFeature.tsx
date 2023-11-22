@@ -46,10 +46,10 @@ export const SmallFeatures = () => {
               <span className="mb-2 block text-lg font-semibold text-primary">
                 What We Offer
               </span>
-              <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark  sm:text-4xl md:text-[40px]">
+              <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-gray-800  sm:text-4xl md:text-[40px]">
                 Grow Your Business
               </h2>
-              <p className="text-base text-body-color">
+              <p className="text-base text-gray-700">
                 Elevate customer interactions, personalize communication, and boost sales—all with the power of Whatellz
               </p>
             </div>

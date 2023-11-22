@@ -13,7 +13,7 @@ const LinkGroup: React.FC<LinkGroupProps> = ({ children, header }) => {
     <>
       <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
         <div className="mb-10 w-full">
-          <h4 className="mb-9 text-lg font-semibold text-dark ">
+          <h4 className="mb-9 text-lg font-semibold text-gray-800 ">
             {header}
           </h4>
           <ul className="space-y-3">{children}</ul>
@@ -33,7 +33,7 @@ const NavLink: React.FC<NavLinkProps> = ({ link, label }) => {
     <li>
       <a
         href={link}
-        className="inline-block text-base leading-loose text-body-color hover:text-primary"
+        className="inline-block text-base leading-loose text-gray-700 hover:text-primary"
       >
         {label}
       </a>
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
                 <a href="/" className="mb-6 inline-block max-w-[160px]">
                   <Image src="/icon.png" width={120} height={20} className="mr-2 md:mr-2" alt={'Whatellz logo'} />
                 </a>
-                <p className="mb-7 text-base text-body-color">
+                <p className="mb-7 text-base text-gray-700">
                   Powerful WhatsApp Auomation Tool. Whatellz Could You Ask For?
                 </p>
               </div>
@@ -72,13 +72,13 @@ const Footer: React.FC = () => {
 
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
-                <h4 className="mb-9 text-lg font-semibold text-dark ">
+                <h4 className="mb-9 text-lg font-semibold text-gray-800 ">
                   Follow Us On
                 </h4>
                 <div className="mb-6 flex items-center">
                   <a
                     href=""
-                    className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-gray-800 hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       width="8"
@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
                   </a>
                   <a
                     href="/"
-                    className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-gray-800 hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       width="16"
@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
                   </a>
                   <a
                     href="/"
-                    className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-gray-800 hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       width="16"
@@ -117,7 +117,7 @@ const Footer: React.FC = () => {
                   </a>
                   <a
                     href="/"
-                    className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-gray-800 hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       width="14"
@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
                     </svg>
                   </a>
                 </div>
-                <p className="text-base text-body-color">
+                <p className="text-base text-gray-700">
                   &copy; 2023 Whatellz
                 </p>
               </div>

@@ -44,7 +44,7 @@ const ListItem: React.FC<ListItemProps> = ({ NavLink, children }) => {
     <li>
       <a
         href={NavLink}
-        className="flex py-2 text-base font-medium text-body-color hover:text-dark lg:ml-12 lg:inline-flex"
+        className="flex py-2 text-base font-medium text-gray-700 hover:text-gray-800 lg:ml-12 lg:inline-flex"
       >
         {children}
       </a>
