@@ -30,13 +30,13 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <span className="mb-3 block text-lg font-semibold text-primary">
           {type}
         </span>
-        <h2 className="mb-5 text-[42px] font-bold text-dark ">
+        <h2 className="mb-5 text-[42px] font-bold text-gray-800 ">
           {price}
-          <span className="text-base font-medium text-body-color">
+          <span className="text-base font-medium text-gray-700">
             / {subscription}
           </span>
         </h2>
-        <p className="mb-8 border-b border-stroke pb-8 text-base text-body-color">
+        <p className="mb-8 border-b border-stroke pb-8 text-base text-gray-700">
           {description}
         </p>
         <div className="mb-9 flex flex-col gap-[14px]">{children}</div>
@@ -326,7 +326,7 @@ interface ListProps {
 
 const List: React.FC<ListProps> = ({ children }) => {
   return (
-    <p className="text-base text-body-color">{children}</p>
+    <p className="text-base text-gray-700">{children}</p>
   );
 };
 
@@ -343,10 +343,10 @@ export const Pricing: React.FC<PricingProps> = () => {
               <span className="mb-2 block text-lg font-semibold text-primary">
                 Pricing Table
               </span>
-              <h2 className="mb-3 text-3xl font-bold leading-[1.208] text-dark  sm:text-4xl md:text-[40px]">
+              <h2 className="mb-3 text-3xl font-bold leading-[1.208] text-gray-800 sm:text-4xl md:text-[40px]">
                 Our Pricing Plan
               </h2>
-              <p className="text-base text-body-color">
+              <p className="text-base text-gray-700">
                 Discover the perfect fit for your needs as we offer clear, 
                 straightforward pricing options tailored to support your goals and budget
               </p>
