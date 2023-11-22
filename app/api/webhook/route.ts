@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { headers } from "next/headers";
 import { admin } from "@/lib/firebase";
 
-export async function GET(req: Request) {
+export async function POST(req: Request) {
   const db = admin.firestore();
   const dataRef = db.collection('users');
 
