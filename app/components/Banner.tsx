@@ -10,7 +10,7 @@ export const Banner = () => {
       });
     }
   };
-
+ 
   return (
     <section className="px-2 pt-44 md:px-0 mb-[8rem] md:mb-[8rem]">
       <div className="container items-center max-w-6xl px-5 mx-auto space-y-6 text-center">
@@ -19,7 +19,7 @@ export const Banner = () => {
           <span className="block mt-1 text-primary lg:inline lg:mt-0">WhatsApp Marketing</span>
         </h1>
         <h2 className="capitalize w-full mx-auto text-base text-left md:max-w-md sm:text-base lg:text-xl md:max-w-3xl md:text-center mb-12">
-          <span className="text-gray-90">Harness The Power Of Engagement And Promote Your Product Or Service To Over 2 Billion People!</span>
+          <span className="text-gray-90">Engage At Scale, Promote Your Product Or Service To Over 2 Billion People!</span>
         </h2>
         <div className="relative flex flex-col justify-center md:flex-row md:space-x-4">
           <a

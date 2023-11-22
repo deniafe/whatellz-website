@@ -26,17 +26,17 @@ const PricingCard: React.FC<PricingCardProps> = ({
 }) => {
   return (
     <div className="w-full px-4 md:w-1/2 lg:w-1/3 cursor-pointer">
-      <div className="relative z-10 mb-10 overflow-hidden rounded-[10px] border-2 border-stroke bg-white px-8 py-10 shadow-pricing dark:border-dark-3 dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-[50px]">
+      <div className="relative z-10 mb-10 overflow-hidden rounded-[10px] border-2 border-stroke bg-white px-8 py-10 shadow-pricing sm:p-12 lg:px-6 lg:py-10 xl:p-[50px]">
         <span className="mb-3 block text-lg font-semibold text-primary">
           {type}
         </span>
         <h2 className="mb-5 text-[42px] font-bold text-dark ">
           {price}
-          <span className="text-base font-medium text-body-color dark:text-dark-6">
+          <span className="text-base font-medium text-body-color">
             / {subscription}
           </span>
         </h2>
-        <p className="mb-8 border-b border-stroke pb-8 text-base text-body-color dark:border-dark-3 dark:text-dark-6">
+        <p className="mb-8 border-b border-stroke pb-8 text-base text-body-color">
           {description}
         </p>
         <div className="mb-9 flex flex-col gap-[14px]">{children}</div>
@@ -45,7 +45,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           className={` ${
             active
               ? "block w-full rounded-md border border-primary bg-primary p-3 text-center text-base font-medium text-white transition hover:bg-opacity-90"
-              : "block w-full rounded-md border border-stroke bg-transparent p-3 text-center text-base font-medium text-primary transition hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3"
+              : "block w-full rounded-md border border-stroke bg-transparent p-3 text-center text-base font-medium text-primary transition hover:border-primary hover:bg-primary hover:text-white"
           } `}
         >
           {buttonText}
@@ -326,7 +326,7 @@ interface ListProps {
 
 const List: React.FC<ListProps> = ({ children }) => {
   return (
-    <p className="text-base text-body-color dark:text-dark-6">{children}</p>
+    <p className="text-base text-body-color">{children}</p>
   );
 };
 
@@ -335,7 +335,7 @@ interface PricingProps {}
 export const Pricing: React.FC<PricingProps> = () => {
 
   return (
-    <section className="relative z-10 overflow-hidden bg-white mb-[4rem] mt-[4rem] dark:bg-dark lg:mb-[8rem] lg:mt-[2rem]">
+    <section className="relative z-10 overflow-hidden bg-white mb-[4rem] mt-[4rem]  lg:mb-[8rem] lg:mt-[2rem]">
       <div className="container">
         <div className="-mx-8 flex flex-wrap">
           <div className="w-full px-4">
@@ -346,9 +346,9 @@ export const Pricing: React.FC<PricingProps> = () => {
               <h2 className="mb-3 text-3xl font-bold leading-[1.208] text-dark  sm:text-4xl md:text-[40px]">
                 Our Pricing Plan
               </h2>
-              <p className="text-base text-body-color dark:text-dark-6">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
+              <p className="text-base text-body-color">
+                Discover the perfect fit for your needs as we offer clear, 
+                straightforward pricing options tailored to support your goals and budget
               </p>
             </div>
           </div>
@@ -407,7 +407,7 @@ export const Pricing: React.FC<PricingProps> = () => {
               type="Business"
               price="₦15,000"
               subscription="month"
-              description="Perfect for when you are getting really serious about yur whatsapp marketing."
+              description="Perfect for when you are getting really serious about your whatsapp marketing."
               buttonText="Choose Business"
               url="/payment-email/#business"
             >

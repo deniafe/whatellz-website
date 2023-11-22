@@ -29,7 +29,7 @@ export async function POST(req: Request) {
         const userEmailToUpdate = flwData.customer.email;
         const status = flwData.status
         const amount = flwData.charged_amount
-        const plan = amount === '8000' ? 'starter' : 'business'
+        const plan = String(amount) === '8000' ? 'starter' : 'business'
 
         if(status === 'successful') {
 

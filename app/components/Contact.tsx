@@ -3,7 +3,7 @@ import React from "react";
 export const Contact = () => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden bg-white mb-[4rem] mt-[4rem] dark:bg-dark lg:mb-[8rem] lg:mt-[2rem]">
+      <section className="relative z-10 overflow-hidden bg-white mb-[4rem] mt-[4rem] lg:mb-[8rem] lg:mt-[2rem]">
         <div className="container">
           <div className="mx-[1rem] md:mx-[4rem] flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -14,10 +14,9 @@ export const Contact = () => {
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-dark  sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore e dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
+                <p className="mb-9 text-base leading-relaxed text-body-color">
+                  {`Get in touch with us! Our team is ready to assist you on your journey to success. 
+                  Reach out and let's start a conversation today! `}
                 </p>
                 {/* <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -38,7 +37,7 @@ export const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark ">
                       Our Location
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-body-color">
                       99 S.t Jomblo Park Pekanbaru 28292. Indonesia
                     </p>
                   </div>
@@ -78,8 +77,8 @@ export const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark ">
                       Phone Number (WhatsApp)
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
-                      (+62)81 414 257 9980
+                    <p className="text-base text-body-color">
+                      08072030152
                     </p>
                   </div>
                 </div>
@@ -103,7 +102,7 @@ export const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark ">
                       Email Address
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-body-color">
                       info@whatellz.com
                     </p>
                   </div>
@@ -111,7 +110,7 @@ export const Contact = () => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12">
+              <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
                 <form>
                   <ContactInputBox
                     type="text"
@@ -981,7 +980,7 @@ const ContactTextArea: React.FC<ContactTextAreaProps> = ({
           rows={row}
           placeholder={placeholder}
           name={name}
-          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary"
           defaultValue={defaultValue}
         />
       </div>
@@ -1003,7 +1002,7 @@ const ContactInputBox: React.FC<ContactInputBoxProps> = ({ type, placeholder, na
           type={type}
           placeholder={placeholder}
           name={name}
-          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary"
         />
       </div>
     </>

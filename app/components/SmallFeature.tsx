@@ -5,39 +5,36 @@ export const SmallFeatures = () => {
   const features = [
     {
       icon: '',
-      title: 'Grow New Channels Rapidly',
+      title: 'Charge Engagements!',
       desc:
-        'If you’ve got a new channel, traffic is going to be your biggest problem, but with Tubely it’s not a problem anymore. You will get a constantly increasing supply of views and organic viewership.',
+        'Supercharge your engagement strategy with Whattelz! Elevate your communication game and watch those responses soar! 🚀',
     },
     {
       icon: '',
-      title: 'Get Subscribers Everyday',
+      title: 'Over 2 billion Users',
       desc:
-        'More subscribers means more dedicated viewership and more authority. With Tubely you will get real subscribers, not fake accounts that YouTube detects and penalizes you for.',
+        `Tap into an audience of over 2 billion active users! Let your brand shine where everyone connects! 🌎✨`,
     },
     {
       icon: '',
-      title: 'Create New Collaborations',
+      title: '98% average open rate',
       desc:
-        'Get in contact with the top YouTube channels of your niche. Talk to them and strike out partnerships, even send them offers, do exchanges, buy rights to videos, and cross-promote. Anything is possible!',
+        `Achieve a phenomenal 98% average open rate with Whatellz. Elevate your brand's reach and open rates! 🌟💬`,
     },
     {
       icon: '',
-      title: 'Increase Your Watch Time',
-      desc:
-        'Watch time is the most important metric that YouTube considers to rank your videos. If your watchtime is higher, it will get you more viewers through search and other sources.',
+      title: 'Multimedia Messaging',
+      desc: `Whatellz supports multimedia messaging, allowing businesses to send images, videos, and audio messages! 📸🎙️`
     },
     {
       icon: '',
-      title: 'Reignite Your Dead Channels',
-      desc:
-        'Did you give up on YouTube already? It’s time to reignite your video passion and get viewers back to your older channels. With Tubely you can drive traffic anywhere. Even to older channels.',
+      title: 'Broadcast Messages',
+      desc: `Easily broadcast high-response WhatsApp messages. Efficiently categorize, and target contacts in collections! 🚀📢📊`,
     },
     {
       icon: '',
-      title: 'Get More Social Authority',
-      desc:
-        'Be right in front of the targeted viewers in your niche no matter which YouTube channel or which video they are watching. Get more popularity and get recognized, resulting in more traffic and authority to you.',
+      title: 'No Code Chat-Bots',
+      desc: `Build simple chatbots for instant responses to common queries. Boost sales, and turn every chat into a delightful experience! 🤖`,
     },
   ]
   return (
@@ -47,14 +44,13 @@ export const SmallFeatures = () => {
           <div className="w-full px-4">
             <div className="mx-auto mb-4 max-w-[510px] text-center lg:mb-8">
               <span className="mb-2 block text-lg font-semibold text-primary">
-                Our Services
+                What We Offer
               </span>
               <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark  sm:text-4xl md:text-[40px]">
-                What We Offer
+                Grow Your Business
               </h2>
-              <p className="text-base text-body-color dark:text-dark-6">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
+              <p className="text-base text-body-color">
+                Elevate customer interactions, personalize communication, and boost sales—all with the power of Whatellz
               </p>
             </div>
           </div>

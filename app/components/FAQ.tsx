@@ -17,12 +17,12 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ header, text }) => {
   };
 
   return (
-    <div className="mb-8 w-full rounded-lg bg-white p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:bg-dark-2 dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-8 lg:px-6 xl:px-8">
+    <div className="mb-8 w-full rounded-lg bg-white p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] sm:p-8 lg:px-6 xl:px-8">
       <button
         className={`faq-btn flex w-full text-left`}
         onClick={(event) => handleToggle(event)}
       >
-        <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-white/5">
+        <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary">
           <svg
             className={`fill-primary stroke-primary duration-200 ease-in-out ${
               active ? "rotate-180" : ""
@@ -52,7 +52,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ header, text }) => {
           active ? "block" : "hidden"
         }`}
       >
-        <p className="py-3 text-base leading-relaxed text-body-color dark:text-dark-6">
+        <p className="py-3 text-base leading-relaxed text-body-color">
           {text}
         </p>
       </div>
@@ -62,7 +62,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ header, text }) => {
 
 export const FAQ: React.FC<AccordionProps> = () => {
   return (
-    <section className="relative z-20 overflow-hidden bg-white  mb-[4rem] mt-[4rem] dark:bg-dark lg:mb-[8rem] lg:mt-[2rem]">
+    <section className="relative z-20 overflow-hidden bg-white  mb-[4rem] mt-[4rem] lg:mb-[8rem] lg:mt-[2rem]">
     <div className="container mx-auto">
       <div className="-mx-4 flex flex-wrap">
         <div className="w-full px-4">
@@ -73,9 +73,9 @@ export const FAQ: React.FC<AccordionProps> = () => {
             <h2 className="mb-4 text-3xl font-bold text-dark  sm:text-[40px]/[48px]">
               Any Questions? Look Here
             </h2>
-            <p className="text-base text-body-color dark:text-dark-6">
-              There are many variations of passages of Lorem Ipsum available
-              but the majority have suffered alteration in some form.
+            <p className="text-base text-body-color">
+            This section is designed to provide quick and concise solutions, 
+            saving you time and keeping you informed
             </p>
           </div>
         </div>
@@ -84,30 +84,30 @@ export const FAQ: React.FC<AccordionProps> = () => {
       <div className="-mx-4 flex flex-wrap">
         <div className="w-full px-4 lg:w-1/2">
           <AccordionItem
-            header="How long we deliver your first blog post?"
-            text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+            header="Is there a free trial available?"
+            text="While we don't offer a free trial, we provide a comprehensive free version of Whatellz. This version allows you to explore and test all the features to ensure it aligns perfectly with your needs."
           />
           <AccordionItem
-            header="How long we deliver your first blog post?"
-            text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+            header="What type of messages should I refrain from sending?"
+            text="Best practices include avoiding sales pitches to numbers with no prior interaction. Nurture your contacts before introducing sales content. Additionally, steer clear of words that may trigger the WhatsApp anti-spam Bot, such as 'Sports Betting,' 'Drugs,' 'Medication,' and 'Gambling.' Opt for subtler alternatives to ensure smooth communication. (e.g., use 'Sports Trading/Arbitrage' instead of 'Sports Betting')."
           />
           <AccordionItem
-            header="How long we deliver your first blog post?"
-            text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+            header="Is it acceptable to send messages to numbers generated and verified on Whatellz?"
+            text="It's not advisable to send broadcast messages directly to numbers generated and verified on Whatellz. Since these contacts may be unfamiliar, it's crucial to initiate engagement through SMS marketing first. This ensures a more personalized and effective approach, allowing you to nurture and eventually convert them into customers within the Whatellz platform. Taking these steps helps build a connection and enhances the overall success of your messaging strategy."
           />
         </div>
         <div className="w-full px-4 lg:w-1/2">
           <AccordionItem
-            header="How long we deliver your first blog post?"
-            text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+            header="How can I bring my leads into Whatellz?"
+            text="Bringing your leads into Whatellz is a flexible process! You can import them using a CSV file, bring in contacts from your phone, generate and verify numbers, or scrape groups you're part of. Important Note: Avoid sending broadcast messages directly to numbers generated and verified on Whatellz, as they may be unfamiliar contacts. Ensure to engage them initially through SMS marketing before nurturing and converting them into customers within Whatellz."
           />
           <AccordionItem
-            header="How long we deliver your first blog post?"
-            text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+            header="Can Whatellz be operated on any device?"
+            text="No, Whatellz is specifically designed for Windows operating systems. It requires installation on a Windows computer for optimal performance. If you prefer running Whatellz in the cloud without installing it on your personal computer, a Virtual Private Server (VPS) is necessary. Utilizing a virtual machine ensures uninterrupted 24/7 operation, free from disturbances on your personal device. Access our step-by-step tutorials for a smooth setup process."
           />
           <AccordionItem
-            header="How long we deliver your first blog post?"
-            text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+            header="Is there a risk of my WhatsApp number being compromised with Whatellz?"
+            text="Not at all. Whatellz is designed with robust safety measures, including built-in fail-safes and Human-Randomization message sending intervals (you choose the minimum and maximum seconds to wait between each message). It ensures the security of your account. However, exercise caution by avoiding content that could lead to multiple reports. Take advantage of Whatellz's opt-out feature, allowing leads to leave your list using a trigger word. Keep in mind, excessive reports may result in WhatsApp blocking your line. Your security is our priority with Whatellz."
           />
         </div>
       </div>

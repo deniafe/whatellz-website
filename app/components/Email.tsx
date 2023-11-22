@@ -96,7 +96,7 @@ export const Email = () => {
 
   return (
     <>
-      <section className="relative z-10 overflow-hidden bg-white mb-[4rem] mt-[4rem] dark:bg-dark lg:mb-[8rem] lg:mt-[2rem]">
+      <section className="relative z-10 overflow-hidden bg-white mb-[4rem] mt-[4rem] lg:mb-[8rem] lg:mt-[2rem]">
         <div className="container">
           <div className="mx-[1rem] md:mx-[4rem] flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -107,7 +107,7 @@ export const Email = () => {
                 <h2 className="mb-6 text-[24px] md:text-[32px] font-bold uppercase text-dark ">
                   Enter Your Details
                 </h2>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
+                <p className="mb-9 text-base leading-relaxed text-body-color">
                 Kindly provide your name, phone and the email address associated with your Whatellz account during the registration process. 
                 Ensure that the email address you enter matches the one linked to your Whatellz account, 
                 as the associated Whatellz account will be upgraded upon successful payment to a {plan} plan.
@@ -116,7 +116,7 @@ export const Email = () => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12">
+              <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
                 <form onSubmit={fetchPaymentLink}>
                   <span className="mb-4 block text-base text-center font-semibold text-primary">
                     Enter Your Details
@@ -128,7 +128,7 @@ export const Email = () => {
                       placeholder="Your Full Name"
                       disabled={loading}
                       onChange={(e) => setName(e.target.value)}
-                      className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                      className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary"
                     />
                     {/* <small className="text-red-600">{errorMessage}</small> */}
                   </div>
@@ -139,7 +139,7 @@ export const Email = () => {
                       placeholder="Your Whatellz Email"
                       disabled={loading}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                      className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary"
                     />
                     <small className="text-red-600">{errorMessage}</small>
                   </div>
@@ -150,7 +150,7 @@ export const Email = () => {
                       placeholder="Your Phone Number"
                       disabled={loading}
                       onChange={(e) => setNumber(e.target.value)}
-                      className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                      className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary"
                     />
                     {/* <small className="text-red-600">{errorMessage}</small> */}
                   </div>

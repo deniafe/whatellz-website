@@ -13,7 +13,8 @@ export const Features = () => {
       title: 'Connect Multiple WhatsApp Profile',
       image: '/profile.png',
       desc:
-        'Find relevant videos for any keyword on 100% autopilot. Just enter the keywords and Tubely will collect the videos for you working in the background. Relevant videos will drive you relevant traffic, making sure your watch-time and conversions are high.',
+        `Unlock unparalleled flexibility! Seamlessly manage multiple WhatsApp profiles within Whatellz, 
+        empowering you to broaden your reach and streamline communication across various accounts effortlessly.`,
     },
     {
       icon: '',
@@ -21,62 +22,65 @@ export const Features = () => {
       title: 'Generate Numbers',
       image: '/generate.png',
       desc:
-        'Leave engaging comments on targeted videos in your niche in 100% autopilot. Grab viewers, fresh subscribers and grow your channel organically without spending anything on paid traffic or hiring costly help.',
+        `More numbers, more power! 
+        With Whatellz, effortlessly generate new WhatsApp numbers to expand your network, 
+        ensuring you always have the right channels to connect with your audience.`,
     },
     {
       icon: '',
       position: 'right',
       title: 'Verify Numbers',
       image: '/verification.png',
-      desc: `You will not get stuck. Tubely comes with full detailed analytics showing you exactly how your campaign is performing. So you know what works and what isn't working`,
+      desc: `Ensure reliability from the start! Whatellz simplifies the verification process, 
+            guaranteeing that every WhatsApp number you generate is validated and ready for effective communication.`,
     },
     {
       icon: '',
       position: 'right',
       title: 'Scrape Groups And Contacts',
       image: '/collections.png',
-      desc:
-        'Random intervals between comments, and maintaining a safe interval between subsequent comments helps maximize approvals and protects you from bans. Tubely will also random-cycle between all the comments to make sure you get maximum variety',
+      desc: `Dive into targeted connections! Scrape any group you are part of.
+             Whatellz empowers you to scrape relevant groups and contacts, paving the way for targeted and personalized engagement.`,
     },
     {
       icon: '',
       position: 'right',
-      title: 'Create Chatbots',
+      title: 'Create And Run Chatbots',
       image: '/chatbot.png',
-      desc:
-        'Want to use more than one youtube account? No worries. You can add as many accounts as you want. Tubely allows you to add as many accounts as possible and you get to pick the one you want for each campaign. Tubely takes care of it all',
+      desc: `Revolutionize customer interactions! With Whatellz, easily build and run chatbots that deliver instant responses, 
+      automate routine tasks, and enhance user engagement—making every interaction meaningful.`,
     },
     {
       icon: '',
       position: 'right',
-      title: 'Create Broadcasts',
+      title: 'Create And Run Broadcasts',
       image: '/broadcast.png',
-      desc:
-        'Keep things organized and sorted between your video channels and projects by putting everything in separate groups. Each group will hold all the data and the interactions that you create for it without affecting the other groups.',
+      desc: `Amplify your message! Whatellz lets you create and run impactful broadcasts, ensuring your announcements, promotions, 
+            or updates reach a wide audience on WhatsApp, fostering engagement and brand visibility`
     },
     {
       icon: '',
       position: 'right',
-      title: 'Multi Threaded & Non Intrusive',
+      title: 'Create And Run Sequences',
       image: '/broadcast2.png',
-      desc:
-        'Tubely works silently in the background without disturbing your work. Its multi-threaded technology processes things faster on your PC while consuming minimal resources.',
+      desc: `Nurture leads effortlessly! Whatellz enables the creation and execution of drip campaigns, allowing you to systematically 
+            engage and guide your audience through personalized journeys, ultimately boosting conversions.`,
     },
     {
       icon: '',
       position: 'right',
       title: 'Dark Mode',
       image: '/dark.png',
-      desc:
-        'Tubely works silently in the background without disturbing your work. Its multi-threaded technology processes things faster on your PC while consuming minimal resources.',
+      desc: `Navigate with style and ease! Embrace the sleek and sophisticated Dark Mode feature in Whatellz, 
+      enhancing your user experience and providing a visually appealing interface for all your WhatsApp marketing endeavors.`,
     },
     {
       icon: '',
       position: 'right',
       title: 'See Everything That Happens In The Browser',
       image: '/connect2.png',
-      desc:
-        'Tubely works silently in the background without disturbing your work. Its multi-threaded technology processes things faster on your PC while consuming minimal resources.',
+      desc: `Stay in control! Whatellz grants you a comprehensive view of all activities within the browser, offering transparency 
+      and empowering you to make informed decisions as you manage and optimize your WhatsApp marketing strategies.`,
     },
   ]
 
