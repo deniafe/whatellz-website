@@ -13,7 +13,7 @@ export async function POST(req: Request) {
 
   const data = JSON.parse(body);
 
-  console.log('This is the webhook data frm flutterwave', body, data.email)
+  console.log('This is the webhook data frm flutterwave', body, data)
 
   if (!signature || (signature !== secretHash)) {
     // This request isn't from Flutterwave; discard
