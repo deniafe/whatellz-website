@@ -30,7 +30,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <span className="mb-3 block text-lg font-semibold text-primary">
           {type}
         </span>
-        <h2 className="mb-5 text-[42px] font-bold text-dark dark:text-white">
+        <h2 className="mb-5 text-[42px] font-bold text-dark ">
           {price}
           <span className="text-base font-medium text-body-color dark:text-dark-6">
             / {subscription}
@@ -343,7 +343,7 @@ export const Pricing: React.FC<PricingProps> = () => {
               <span className="mb-2 block text-lg font-semibold text-primary">
                 Pricing Table
               </span>
-              <h2 className="mb-3 text-3xl font-bold leading-[1.208] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+              <h2 className="mb-3 text-3xl font-bold leading-[1.208] text-dark  sm:text-4xl md:text-[40px]">
                 Our Pricing Plan
               </h2>
               <p className="text-base text-body-color dark:text-dark-6">
@@ -372,8 +372,8 @@ export const Pricing: React.FC<PricingProps> = () => {
               <List>1 Sequence</List>
               <List>200 Sequence Messages / Month</List>
               <List>1 Collection / Numbers List</List>
-              <List>200 Numbers Generation / Day</List>
-              <List>200 Numbers Verification / Day</List>
+              <List>100 Numbers Generation / Day</List>
+              <List>100 Numbers Verification / Day</List>
               <List>200 Group Participants scraping / Month </List>
               <List>200 Contacts scraping / Month </List>
               <List>0 Numbers Export / Day </List>

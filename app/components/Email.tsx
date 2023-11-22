@@ -85,7 +85,7 @@ export const Email = () => {
                 <span className="mb-4 block text-base font-semibold text-primary">
                   Whatellz {plan} Plan
                 </span>
-                <h2 className="mb-6 text-[24px] md:text-[32px] font-bold uppercase text-dark dark:text-white">
+                <h2 className="mb-6 text-[24px] md:text-[32px] font-bold uppercase text-dark ">
                   Enter Your Whatellz Email
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">

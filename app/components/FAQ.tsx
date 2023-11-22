@@ -41,7 +41,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ header, text }) => {
         </div>
 
         <div className="w-full">
-          <h4 className="mt-1 text-lg font-semibold text-dark dark:text-white">
+          <h4 className="mt-1 text-lg font-semibold text-dark ">
             {header}
           </h4>
         </div>
@@ -70,7 +70,7 @@ export const FAQ: React.FC<AccordionProps> = () => {
             <span className="mb-2 block text-lg font-semibold text-primary">
               FAQ
             </span>
-            <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
+            <h2 className="mb-4 text-3xl font-bold text-dark  sm:text-[40px]/[48px]">
               Any Questions? Look Here
             </h2>
             <p className="text-base text-body-color dark:text-dark-6">

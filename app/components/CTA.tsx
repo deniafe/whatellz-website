@@ -24,12 +24,6 @@ export const CTA: React.FC = () => {
                   >
                    Download Whatellz
                   </a>
-                  {/* <a
-                    href="javascript:void(0)"
-                    className="inline-flex py-3 my-1 text-base font-medium text-white transition rounded-md bg-secondary px-7 hover:bg-opacity-90"
-                  >
-                    Start Free Trial
-                  </a> */}
                 </div>
               </div>
             </div>

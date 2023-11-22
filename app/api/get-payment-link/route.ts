@@ -9,9 +9,11 @@ export async function POST(req: Request) {
 
   const data = JSON.parse(body);
 
-  console.log('tHE IS THE DATA PAYMENT', body, data.email)
+  console.log('tHE IS THE DATA PAYMENT', body, data.email, signature, process.env.NEXT_PUBLIC_W_SECRET_HASH)
 
-  if(signature === process.env.W_SECRET_HASH) {
+  if(signature === process.env.NEXT_PUBLIC_W_SECRET_HASH) {
+
+    console.log('tHE IS THE DATA PAYMENT', body, data.email)
 
     const refID = nanoid()
     const amount = data.plan === 'Starter' ? '8000' : '15000'
