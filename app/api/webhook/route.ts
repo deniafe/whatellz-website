@@ -22,28 +22,39 @@ export async function POST(req: Request) {
 
   try {
 
-    // Example: Update user with email 'deniafe@gmail.com'
-    const userEmailToUpdate = 'deba@email.com';
+    // If charge is completed
+    if(data.event === 'charge.completed') {
+        const flwData = data.data
+        // Example: Update user with email 'deniafe@gmail.com'
+        const userEmailToUpdate = flwData.customer.email;
+        const status = flwData.status
+        const amount = flwData.charged_amount
+        const plan = amount === '8000' ? 'starter' : 'business'
 
-    // Step 1: Query the Firestore collection to find the document with the specified email
-    const querySnapshot = await dataRef.where('email', '==', userEmailToUpdate).get();
+        if(status === 'successful') {
 
-    if (querySnapshot.empty) {
-      // Handle case where no user with the specified email is found
-      return NextResponse.json({ error: 'User email not found' }, { status: 404 });
+            // Step 1: Query the Firestore collection to find the document with the specified email
+          const querySnapshot = await dataRef.where('email', '==', userEmailToUpdate).get();
+
+          if (querySnapshot.empty) {
+            // Handle case where no user with the specified email is found
+            return NextResponse.json({ error: 'User email not found' }, { status: 404 });
+          }
+
+          // Step 2: Update the found document with the new data
+          const userDoc = querySnapshot.docs[0];
+          const userDataToUpdate = {
+            subscription: {
+              subscriptionstartDate: new Date(),
+              subscriptionStatus: 'active',
+              subscriptionType: plan
+            },
+          };
+
+          await userDoc.ref.update(userDataToUpdate);
+
+        }
     }
-
-    // Step 2: Update the found document with the new data
-    const userDoc = querySnapshot.docs[0];
-    const userDataToUpdate = {
-      // Add the fields you want to update
-      // For example:
-      firstName: 'NewFirstName',
-      lastName: 'NewLastName',
-    };
-
-    await userDoc.ref.update(userDataToUpdate);
-
     
     return NextResponse.json(null, { status: 200 });
 

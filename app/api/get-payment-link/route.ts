@@ -16,6 +16,9 @@ export async function POST(req: Request) {
     console.log('tHE IS THE DATA PAYMENT', body, data.email)
 
     const refID = nanoid()
+    const name = data.name
+    const number = data.number
+    const userId = data.userId
     const amount = data.plan === 'Starter' ? '8000' : '15000'
     const title = data.plan === 'Starter' ? 'Whatellz Starter Plan' : 'Whatellz Business Plan'
     const payment_plan = data.plan === 'Starter' ? '60314' : '60315'
@@ -28,8 +31,13 @@ export async function POST(req: Request) {
           amount,
           currency: "NGN",
           redirect_url: "http://localhost:3000/payment-successful",
+          meta: {
+            consumer_id: userId,
+        },
           customer: {
-            email: data.email
+            email: data.email,
+            phonenumber: number,
+            name: name
           },
           customizations: {
             title,

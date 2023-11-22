@@ -7,6 +7,8 @@ export const Email = () => {
   const [loading, setLoading] = useState(false);
   const [plan, setPlan] = useState('');
   const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [number, setNumber] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   function isValidEmail(email: string) {
@@ -28,13 +30,30 @@ export const Email = () => {
     setErrorMessage('');
   
     try {
+
+      const res = await fetch('/api/get-user-id', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email }),
+      });
+  
+      const res_data = await res.json();
+  
+      console.log('This user id:', res_data);
+
+      if(res_data.error) return setErrorMessage('There is no whatellz user associated with this email');
+
+      const userId = res_data.userId
+
       const response = await fetch('/api/get-payment-link', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'whatellz': 'signature-whatellz-payment'
         },
-        body: JSON.stringify({ email, plan }),
+        body: JSON.stringify({ email, plan, userId, number, name }),
       });
   
       const data = await response.json();
@@ -86,10 +105,10 @@ export const Email = () => {
                   Whatellz {plan} Plan
                 </span>
                 <h2 className="mb-6 text-[24px] md:text-[32px] font-bold uppercase text-dark ">
-                  Enter Your Whatellz Email
+                  Enter Your Details
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
-                Kindly provide the email address associated with your Whatellz account during the registration process. 
+                Kindly provide your name, phone and the email address associated with your Whatellz account during the registration process. 
                 Ensure that the email address you enter matches the one linked to your Whatellz account, 
                 as the associated Whatellz account will be upgraded upon successful payment to a {plan} plan.
                 </p>
@@ -100,8 +119,19 @@ export const Email = () => {
               <div className="relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12">
                 <form onSubmit={fetchPaymentLink}>
                   <span className="mb-4 block text-base text-center font-semibold text-primary">
-                    Enter The Email Associated With Your Whatellz Account
+                    Enter Your Details
                   </span>
+                  <div className="mb-6">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Your Full Name"
+                      disabled={loading}
+                      onChange={(e) => setName(e.target.value)}
+                      className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                    />
+                    {/* <small className="text-red-600">{errorMessage}</small> */}
+                  </div>
                   <div className="mb-6">
                     <input
                       type="text"
@@ -112,6 +142,17 @@ export const Email = () => {
                       className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
                     />
                     <small className="text-red-600">{errorMessage}</small>
+                  </div>
+                  <div className="mb-6">
+                    <input
+                      type="text"
+                      name="number"
+                      placeholder="Your Phone Number"
+                      disabled={loading}
+                      onChange={(e) => setNumber(e.target.value)}
+                      className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                    />
+                    {/* <small className="text-red-600">{errorMessage}</small> */}
                   </div>
                   <div>
                     <button
