@@ -30,7 +30,7 @@ export async function GET(req: Request) {
 
     if (querySnapshot.empty) {
       // Handle case where no user with the specified email is found
-      return NextResponse.json({ error: 'User not found' }, { status: 404 });
+      return NextResponse.json({ error: 'User email not found' }, { status: 404 });
     }
 
     // Step 2: Update the found document with the new data
