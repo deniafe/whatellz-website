@@ -5,7 +5,7 @@ export const Contact = () => {
     <>
       <section className="relative z-10 overflow-hidden bg-white mb-[4rem] mt-[4rem] lg:mb-[8rem] lg:mt-[2rem]">
         <div className="container">
-          <div className="mx-[1rem] md:mx-[4rem] flex flex-wrap lg:justify-between">
+          <div className="md:mx-[4rem] flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
                 <span className="mb-4 block text-base font-semibold text-primary">
@@ -109,7 +109,7 @@ export const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+            <div className="w-full lg:w-1/2 xl:w-5/12">
               <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
                 <form>
                   <ContactInputBox

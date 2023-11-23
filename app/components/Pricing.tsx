@@ -354,7 +354,7 @@ export const Pricing: React.FC<PricingProps> = () => {
           </div>
         </div>
 
-        <div className="mx-8 flex flex-wrap justify-center">
+        <div className="md:mx-8 flex flex-wrap justify-center">
           <div className="-mx-4 flex flex-wrap">
             <PricingCard
               type="Free"
