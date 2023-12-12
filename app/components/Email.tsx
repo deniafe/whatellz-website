@@ -59,8 +59,11 @@ export const Email = () => {
   
       console.log('Payment link:', data.data.link);
   
-      // Redirect to the payment link
-      window.location.href = data.data.link;
+      // Open the payment link in a new tab
+      window.open(data.data.link, '_blank');
+
+      setLoading(false);
+
     } catch (error) {
       console.error('Error fetching data:', error);
     } finally {

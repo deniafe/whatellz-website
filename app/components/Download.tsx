@@ -27,7 +27,7 @@ export const Download = () => {
               ></i>
               <a
                 // href="https://github.com/deniafe/tubely/releases/download/v0.2.2/tubely-Setup-0.2.2.exe"
-                href="https://github.com/deniafe/whatellz/releases/download/v0.3.9/Whatellz.0.2.0_x64.exe"
+                href="https://github.com/Drianbake/whatellz/releases/download/v0.2.0/Whatellz.0.2.0_x64.exe"
                 rel="nofollow"
                 className="w-full px-3 py-4 font-medium text-lg text-primary cursor-pointer focus:outline-none underline"
                 onClick={() => setClicked(true)}

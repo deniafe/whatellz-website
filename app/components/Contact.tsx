@@ -14,8 +14,8 @@ export const Contact = () => {
     setLoading(true);
     setErrorMessage('');
 
-      // Open the whatsapp link in a new tab
-     window.open(`https://api.whatsapp.com/send/?phone=2348072030152&text=${message}`, '_blank');
+    // Open the whatsapp link in a new tab
+    window.open(`https://api.whatsapp.com/send/?phone=2348072030152&text=${message}`, '_blank');
 
      setLoading(false);
      setMessage('')
