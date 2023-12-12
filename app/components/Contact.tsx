@@ -1,6 +1,26 @@
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 
 export const Contact = () => {
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const sendMessage = async (event: React.SyntheticEvent) => {
+    event.preventDefault();
+  
+    if (!message) return setErrorMessage('You need to enter your message to proceed');
+  
+    setLoading(true);
+    setErrorMessage('');
+
+      // Open the whatsapp link in a new tab
+     window.open(`https://api.whatsapp.com/send/?phone=2348072030152&text=${message}`, '_blank');
+
+     setLoading(false);
+     setMessage('')
+  };
+
   return (
     <>
       <section className="relative z-10 overflow-hidden bg-white mb-[4rem] mt-[4rem] lg:mb-[8rem] lg:mt-[2rem]">
@@ -78,7 +98,7 @@ export const Contact = () => {
                       Phone Number (WhatsApp)
                     </h4>
                     <p className="text-base text-gray-700">
-                      08072030152
+                      +2348072030152
                     </p>
                   </div>
                 </div>
@@ -111,8 +131,8 @@ export const Contact = () => {
             </div>
             <div className="w-full lg:w-1/2 xl:w-5/12">
               <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
-                <form>
-                  <ContactInputBox
+                <form onSubmit={sendMessage}>
+                  {/* <ContactInputBox
                     type="text"
                     name="name"
                     placeholder="Your Name"
@@ -126,19 +146,27 @@ export const Contact = () => {
                     type="text"
                     name="phone"
                     placeholder="Your Phone"
-                  />
-                  <ContactTextArea
-                    row={6}
-                    placeholder="Your Message"
-                    name="details"
-                    defaultValue=""
-                  />
+                  /> */}
+                 
+                  <div className="mb-6">
+                    <textarea
+                      value={message}
+                      rows={6}
+                      placeholder="Your Message"
+                      name="details"
+                      onChange={(e) => setMessage(e.target.value)}
+                      defaultValue=""
+                      className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-gray-700 outline-none focus:border-primary"
+                    />
+                     <small className="text-red-600">{errorMessage}</small>
+                  </div>
                   <div>
                     <button
+                      disabled={loading}
                       type="submit"
                       className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
                     >
-                      Send Message
+                      {loading ? (<span className="animate-pulse" >Please Wait ...</span>) : ' Send WhatsApp Message '}
                     </button>
                   </div>
                 </form>

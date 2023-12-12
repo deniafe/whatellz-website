@@ -1,5 +1,6 @@
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import { WhatsappContact } from './components/WhatsappContact'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -22,6 +23,7 @@ export default function RootLayout({
           <main>
             {children}
           </main>
+          <WhatsappContact />
         <Footer />
       </body>
     </html>

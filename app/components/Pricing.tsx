@@ -364,20 +364,20 @@ export const Pricing: React.FC<PricingProps> = () => {
               buttonText="Download Whatellz"
               url="/download"
             >
-              <List>1 WhatsApp Profile</List>
-              <List>1 Broadcast</List>
+              {/* <List>1 WhatsApp Profile</List> */}
+              {/* <List>1 Broadcast</List> */}
               <List>20 Daily Broadcast Messages / Day</List>
-              <List>1 Chat-Bot</List>
+              {/* <List>1 Chat-Bot</List> */}
               <List>50 Chat-Bot Messages And Triggers / Day</List>
-              <List>1 Sequence</List>
+              {/* <List>1 Sequence</List> */}
               <List>200 Sequence Messages / Month</List>
-              <List>1 Collection / Numbers List</List>
-              <List>100 Numbers Generation / Day</List>
+              {/* <List>1 Collection / Numbers List</List> */}
+              {/* <List>100 Numbers Generation / Day</List> */}
               <List>100 Numbers Verification / Day</List>
-              <List>200 Group Participants scraping / Month </List>
-              <List>200 Contacts scraping / Month </List>
+              <List>1 Group scraping / Day </List>
+              <List>1 Contacts scraping / Month </List>
               <List>0 Numbers Export / Day </List>
-              <List>1 Numbers Import / Day </List>
+              {/* <List>1 Numbers Import / Day </List> */}
             </PricingCard>
             <PricingCard
               type="Starter"
@@ -388,20 +388,20 @@ export const Pricing: React.FC<PricingProps> = () => {
               active
               url="/payment-email/#starter"
             >
-              <List>3 WhatsApp Profiles</List>
-              <List>10 Broadcasts</List>
+              {/* <List>3 WhatsApp Profiles</List> */}
+              {/* <List>10 Broadcasts</List> */}
               <List>1000 Broadcast Messages / Day</List>
-              <List>10 Chat-Bot</List>
+              {/* <List>10 Chat-Bot</List> */}
               <List>3000 Chat-Bot Messages And Triggers / Day</List>
-              <List>10 Sequence</List>
+              {/* <List>10 Sequence</List> */}
               <List>10000 Sequence Messages / Month</List>
-              <List>10 Collection / Numbers List</List>
-              <List>1000 Numbers Generation / Day</List>
+              {/* <List>10 Collection / Numbers List</List> */}
+              {/* <List>1000 Numbers Generation / Day</List> */}
               <List>1000 Numbers Verification / Day</List>
-              <List>500 Group Participants Scraping / Day </List>
-              <List>500 Contacts scraping / Day </List>
+              <List>5 Groups Scraping / Day </List>
+              <List>5 Contacts scraping / Day </List>
               <List>Unlimited Numbers Export / Day </List>
-              <List>Unlimited Numbers Import / Day </List>
+              {/* <List>Unlimited Numbers Import / Day </List> */}
             </PricingCard>
             <PricingCard
               type="Business"
@@ -411,20 +411,20 @@ export const Pricing: React.FC<PricingProps> = () => {
               buttonText="Choose Business"
               url="/payment-email/#business"
             >
-               <List>10 WhatsApp Profiles</List>
-              <List>20 Broadcasts</List>
+               {/* <List>10 WhatsApp Profiles</List> */}
+              {/* <List>20 Broadcasts</List> */}
               <List>2000 Broadcast Messages / Day</List>
-              <List>20 Chat-Bot</List>
+              {/* <List>20 Chat-Bot</List> */}
               <List>6000 Chat-Bot Messages And Triggers / Day</List>
-              <List>20 Sequence</List>
+              {/* <List>20 Sequence</List> */}
               <List>20000 Sequence Messages / Month</List>
-              <List>20 Collection / Numbers List</List>
-              <List>5000 Numbers Generation / Day</List>
+              {/* <List>20 Collection / Numbers List</List> */}
+              {/* <List>5000 Numbers Generation / Day</List> */}
               <List>5000 Numbers Verification / Day</List>
-              <List>1000 Group Participants Scraping / Day </List>
-              <List>1000 Contacts Scraping / Day </List>
+              <List>10 Group Scraping / Day </List>
+              <List>10 Contacts Scraping / Day </List>
               <List>Unlimited Numbers Export / Day </List>
-              <List>Unlimited Numbers Import / Day </List>
+              {/* <List>Unlimited Numbers Import / Day </List> */}
             </PricingCard>
           </div>
         </div>

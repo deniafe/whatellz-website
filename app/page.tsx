@@ -4,7 +4,7 @@ import { FAQ } from './components/FAQ'
 import { Features } from './components/Feature'
 import { FeatureSlider } from './components/FeatureSlider'
 import { HeroImage } from './components/HeroImage'
-import { Pricing } from './components/Pricing'
+import { Pricing } from "./components/Pricing";
 import { Services } from './components/Services'
 import { SmallFeatures } from './components/SmallFeature'
 

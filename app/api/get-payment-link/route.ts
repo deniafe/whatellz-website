@@ -30,7 +30,8 @@ export async function POST(req: Request) {
           tx_ref: refID,
           amount,
           currency: "NGN",
-          redirect_url: "https://whatellz.vercel.app/payment-successful",
+          redirect_url: "https://whatellz.com/payment-successful",
+          // redirect_url: "http://localhost:3000/payment-successful",
           meta: {
             consumer_id: userId,
         },
